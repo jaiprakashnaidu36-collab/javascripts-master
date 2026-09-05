@@ -9,4 +9,10 @@ console.log(number);
 console.log(location);
 
 
-// 
+// array
+
+const fruits = [ "mangao","manish"]
+
+console.log(fruits[0]);
+
+
