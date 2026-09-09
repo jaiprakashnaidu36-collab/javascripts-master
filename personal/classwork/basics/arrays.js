@@ -71,8 +71,49 @@ console.log(arr_.splice(1,3));      // elements from 1 to 3 will be printed
 console.log(arr);   // original array will be cchanged where the elements from 1 to 3 from the original array will be removed
 
 
- 
 
+// copywithin()
+// array.copyWithin(target, start = 0, end = array.length)
+ 
+// target -> where the copy should be pasted  , start  -> start copying from , end -> end copy at 
+
+const a =[10,20,30,40,50,60,70,80]
+
+console.log("Using copywith : ",a.copyWithin(0,2,5));
+// starting copying from 2 and end at 5 and paste it at the 0th index 
+
+// copywithin changes the original array 
+
+console.log("The array after using copywithin function : " , a);
+
+// concat array is used to add or join two or more arrays together 
+
+const b =[90,100];
+const c = a.concat(b);
+
+console.log(c);
+
+// using spread to concat arrays 
+
+const new_c = [...arr,...a,...b]
+console.log(new_c);
+
+
+// spread is used most widely than concat because you can add as many arrays as possible via spread 
+
+// Flat is used to instances creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+
+
+const new__array =[1,2,3,[1,2,3],[4,5,[6,7,8,9]]]
+console.log(new__array.flat(Infinity));
+
+
+// to convert any data type into array we use from 
+
+console.log(Array.isArray("Jaiprakash"));
+console.log(Array.from("Jaiprakash"));
+
+    
 
 
 
