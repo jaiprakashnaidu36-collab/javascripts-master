@@ -8,6 +8,11 @@ const j = 'hello world'   // strings defined using single quote quote
 const a = `Hi there my name is Jai prakash , 
 currently studying in MVJ`
 
+//string interpolation
+
+console.log(`${j} my name is ${s}`);
+
+
 // there are many operation we can do with string like 
 /*
 1) Concatination
