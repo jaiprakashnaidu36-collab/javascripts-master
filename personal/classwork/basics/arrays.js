@@ -112,18 +112,3 @@ console.log(new__array.flat(Infinity));
 
 console.log(Array.isArray("Jaiprakash"));
 console.log(Array.from("Jaiprakash"));
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-

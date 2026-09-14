@@ -53,9 +53,3 @@ console.log(Math.log(1.67));
 
 console.log(Math.pow(7, 3));    // 343
 console.log(Math.pow(-7, 0.5))       // NAN because negative numbers don't have a real square root
-
-
-
-
-
-
