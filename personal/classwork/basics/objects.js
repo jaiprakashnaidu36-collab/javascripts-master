@@ -53,3 +53,64 @@ myobj.welcome = function(){
 // this refers to the execution context of the function
 
 myobj.welcome();
+
+// To add data into an empty object 
+
+const my = {}
+
+my.name = "Jai prakash"
+my.age = 19
+
+console.log(my);
+
+// objects inside an object 
+
+const anoth = {
+    name : ["hello" ,"why"]
+}
+
+console.log(typeof anoth.name);
+
+
+const anoth_ = {
+    name_ : {
+        k : "hello",
+        greet : "world"
+    }
+}
+
+console.log(anoth_.name_.k);
+console.log(anoth_["name_"]["k"]);
+
+// To concatinate 2 or more objects we use Object.assign(firstobj,secondobj) keeyword
+
+const copy_ = Object.assign(my,anoth)
+
+// copy elements of anoth into my 
+
+console.log("This is the original object ",my);
+console.log("This is a copy of 2 objects concatenated ",copy_);
+
+// To add many objects into an single object
+
+const newobj = Object.assign({},my,myobj,anoth)
+
+// we can even add objects using spread
+
+const new_obj = {...anoth,...myobj}
+
+// To destructure an object 
+
+
+const q = {
+    studentid : 45554,
+    studentname : "Peter griffin",
+    studentcourse : "Btech"
+}
+
+// destructuring means instead of writing the whole variable name while printing we can write the shortform of the variable and can ommit writing objname. everything while printing it
+// Destructuring is a JavaScript expression that unpacks values from arrays, or properties from objects, and binds them into distinct, standalone variables using a syntax that mirrors the structure of the data itself
+const {studentcourse : course} = q
+
+console.log(course);
+
