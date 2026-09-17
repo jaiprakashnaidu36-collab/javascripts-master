@@ -91,3 +91,29 @@ function getarr(arrnm){
 }
 
 getarr(arr)
+
+
+// function inside a function 
+
+
+function row(us_nm){
+    console.log(us_nm);
+    function col(nm){
+        console.log("Function inside a function : ",nm);
+    }
+    col(19)
+}
+
+row("jai")
+
+
+// Different way of defining a function
+
+
+// add1(10)    --- >>>  trying to call a function that is defined using a variable before the function itself will cause error
+
+const add1 = function(num){
+    console.log(num);
+}
+
+add1(10)
