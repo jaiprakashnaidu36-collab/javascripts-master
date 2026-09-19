@@ -8,3 +8,5 @@
 ( (name__)=> {
     console.log(`Name = ${name__}`)
 })("Jai prakash")
+
+// ()() in the first parenthasis you write the function and in the second parenthesis you calll the function either with arguments or without argumenst
