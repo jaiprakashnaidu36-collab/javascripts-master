@@ -31,6 +31,15 @@ const val = function(value_,...c ){
         }
         console.log(c[i])
     }
+
+    console.log("Using continue keyword to skip the value : \t")
+
+    for(let i = 0 ; i < c.length ; i++){
+        if(c[i] == value_){
+            continue
+        }
+        console.log(c[i])
+    }
 }
 
 const aa = [10,20,30,40,50]
