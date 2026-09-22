@@ -44,5 +44,26 @@ const val = function(value_,...c ){
 
 const aa = [10,20,30,40,50]
 l = 40
-val(l,...aa )
+// val(l,...aa )
 
+
+
+
+// while and do while loop
+console.log("Using while loop : ")
+
+let i = 0 
+
+while(i<5){
+    console.log(i)
+    i++
+}
+
+console.log("Using do while loop : ")
+
+let w = 1
+
+do {
+    console.log(w)
+    w++
+} while (w<5);
