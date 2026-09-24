@@ -62,3 +62,5 @@ const ml = [ {
 ml.forEach( (i) => {
     console.log(i.name)
 })
+
+// foreach doesn't return anything but filter does return
