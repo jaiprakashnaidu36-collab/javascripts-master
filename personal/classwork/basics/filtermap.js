@@ -36,3 +36,33 @@ s.map( (num) => num *10)
 })
 
 console.log(retu)
+
+
+// reduce 
+
+const add = [1,2,3]
+
+const total = add.reduce( function (acc,current_val){
+    return acc + current_val
+},0)
+
+console.log(total)
+
+const add_ = [
+    {
+    name : "js",
+    price : 1999
+    },
+    {
+    name : "py",
+    price : 5999
+    },
+    {
+    name : "cpp",
+    price : 14000
+    }
+]
+
+
+const inc = add_.reduce( (avl,curr) => (avl+curr.price),0)
+console.log(inc)
