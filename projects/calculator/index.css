@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+
+body{
+    background-color: lab(92.01% 4.43 19 / 0.54);
+}
+
+.headin{
+    display: inline;
+    margin:1rem;
+    padding:1rem;
+}
+
+.cen{
+    width:100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_div{
+    width: 60%;
+    min-height: 80%;
+    background-color: rgba(225, 225, 225, 0.8);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-radius:20px;
+}
+
+.sub{
+    margin:1rem;
+    border:1px solid black;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex:1 1 inherit;
+}
+
+.sub:nth-child(1){
+    grid-column: 1/5;
+}
+
+.type{
+    width:100%;
+    height:100%;
+    font-size: 2rem;
+    border-radius: inherit;
+}
+
+.sub:nth-child(12){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.sub:nth-child(13){
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.sub:hover{
+    transform: scale(105%);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
+    background-color: black;
+    color:white;
+    
+}
