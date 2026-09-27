@@ -63,6 +63,7 @@ body{
     grid-column-end: 5;
 }
 
+
 .sub:nth-child(13){
     grid-column-start: 1;
     grid-column-end: 2;
