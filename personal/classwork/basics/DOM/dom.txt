@@ -1,41 +1,99 @@
 
 document.baseURI
-'http://127.0.0.1:5500/personal/classwork/basics/DOM/dom.html'
+>> 'http://127.0.0.1:5500/personal/classwork/basics/DOM/dom.html'
+
+
 
 
 document.location
-Location {ancestorOrigins: DOMStringList, href: 'http://127.0.0.1:5500/personal/classwork/basics/DOM/dom.html', origin: 'http://127.0.0.1:5500', protocol: 'http:', host: '127.0.0.1:5500', …}
+>> Location {ancestorOrigins: DOMStringList, href: 'http://127.0.0.1:5500/personal/classwork/basics/DOM/dom.html', origin: 'http://127.0.0.1:5500', protocol: 'http:', host: '127.0.0.1:5500', …}
+
+
 
 let val = document.querySelector("h1")
-undefined
+>> undefined
 val.style.backgroundColor = "red"
-'red'
+>> 'red'
+
 
 
 let val = document.querySelector("li")
-undefined
+>> undefined
 val.style.listStyle = "number"
-'number'
+>> 'number'
+
+
 
 let d = document.body
-undefined
+>> undefined
 d.style.fontFamily = "italics"
-'italics'
+>> 'italics'
 d.style.backgroundColor = "green"
-'green'
+>> 'green'
+
 
 
 let d = document.querySelector("li")
-undefined
+>> undefined
 d.innerText
-'one'
+>> 'one'
 d.innerText = "hello"
-'hello'
+>> 'hello'
+
 
 
 let val = document.querySelectorAll("li")
 undefined
 val
-NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+>> NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
 val[0].style.color = "red"
-'red
+>> 'red
+
+
+
+const b = document.querySelectorAll("li")
+>> undefined
+typeof(b)
+>> 'object'
+b.forEach((i) =>{
+    console.log(i)
+})
+
+
+
+const d = document.querySelectorAll("h1")
+>> undefined
+d
+>> NodeList [h1.heading]0: h1.headinglength: 1[[Prototype]]: NodeList
+Array.from(d)
+>> [h1.heading]0: h1.headinglength: 1[[Prototype]]: Array(0)
+console.log(d[1])
+VM966:1 undefined
+>> undefined
+console.log(d[0])
+>> <h1 class="heading">Heading </h1>
+
+
+
+
+let s = document.querySelector("h1")
+>> undefined
+s.innerHTML
+>> 'Heading '
+s.innerText
+>> 'Heading'
+s.outerHTML
+>> '<h1 class="heading">Heading </h1>'
+s.outerHTML
+>> '<h1 class="heading">Heading </h1>'
+
+
+
+let a = document.querySelector("h1")
+>> undefined
+a.innerHTML
+>> 'Heading <span class="sp">100</span>'
+a.innerText
+>> 'Heading'
+a.textContent
+>> 'Heading 100'
