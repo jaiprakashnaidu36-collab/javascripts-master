@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+}
+
+.calu_BMI{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1 1;
+    height: 100vh;
+    border:1px solid red;
+}
+
+.heading{
+    margin-top:-10rem;
+    margin-bottom: 5rem;
+}
+
+.form_{
+    font-size: 1.5rem;
+}
+
+#height{
+    margin:1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+#Weight{
+    margin:1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+#bmi{
+    width:100%;
+    justify-content: center;
+}
+
+.output{
+    margin-top:2rem;
+}
