@@ -30,3 +30,4 @@ shoppingList.addEventListener("click", (e) => {
   shoppingList.appendChild(doneLi);
   row.remove();
 });
+
