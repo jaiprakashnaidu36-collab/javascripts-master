@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../Events/events.js" defer></script>
+</head>
+<body></body>
+
+        <!-- <button class = "but-class" id="but-id" >Value</button>
+        <p id="clicked">Button was not clicked </p> -->
+
+
+        <!-- <input id="smgt" type="text">
+        <p>The key which was pressed is : <span class="select">NONE</span></p>-->
+
+        <ul id="shopping-list">
+            <li class="item" data-id="1">
+                <span class="item-name">Apples</span>
+                <button class="btn done-btn">Done</button>
+                <button class="btn delete-btn">Delete</button>
+            </li>
+            <li class="item" data-id="2">
+                <span class="item-name">Oat Milk</span>
+                <button class="btn done-btn">Done</button>
+                <button class="btn delete-btn">Delete</button>
+            </li>
+            <li class="item" data-id="3">
+                <span class="item-name">Eggs</span>
+                <button class="btn done-btn">Done</button>
+                <button class="btn delete-btn">Delete</button>
+            </li>
+            </ul>
+
+        <style>
+            #shopping-list {
+                list-style: none;
+                padding: 0;
+                max-width: 320px;
+                font-family: sans-serif;
+            }
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 0;
+                border-bottom: 1px solid #ddd;
+            }
+            .item-name {
+                flex: 1;
+            }
+        /* Strikethrough style for completed items */
+            .item.completed .item-name {
+                text-decoration: line-through;
+                color: #888;
+            }
+            .btn {
+                cursor: pointer;
+                padding: 4px 8px;
+            }
+        </style>
+</body>
+</html>
