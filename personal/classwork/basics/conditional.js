@@ -33,4 +33,3 @@ else if(val < 40){
 else{
     console.log("value is less than 50");
 }
-

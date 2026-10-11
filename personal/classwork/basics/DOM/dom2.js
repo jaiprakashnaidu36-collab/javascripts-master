@@ -156,5 +156,26 @@ val.style.color = "red"
 div = val.children[0]
 div.style.color = " black"
 
+// getComputedStyle
 
+console.log(window.getComputedStyle(div))
+console.log(window.getComputedStyle(div).backgroundColor)
 
+// classname property 
+
+atri = document.getElementById("language")
+atri.className = "atriclass"
+
+atri.className += " search"
+
+// classlist
+
+console.log(atri.classList)
+
+atri.classList.add("anoclass")  // to add class using classlist
+// we can add multiple class using classlist.add("1st","2nd",..)
+
+atri.classList.remove("atriclass")
+
+atri.classList.replace("search" , "sea" )
+console.log(atri)

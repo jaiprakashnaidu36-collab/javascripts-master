@@ -57,7 +57,6 @@ main_.addEventListener('click',(e)=>{
         if(operator == ''){
             firstnumber += result
             ente.value = firstnumber
-
         }
         else{
             secondnumber += result
