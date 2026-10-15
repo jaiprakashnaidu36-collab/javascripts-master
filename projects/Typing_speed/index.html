@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapidStrokes</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/images.png" type="image/x-icon">
+</head>
+<body>
+    <header class="navhead">
+        <div class="navhead1">
+            <img src="images/Gemini_Generated_Image_lkdno3lkdno3lkdn.png" alt="RapidStrokes Logo" height="50">
+        </div>
+        <div class="navhead1">
+            <nav class="nav">
+                <a href="#about" class="links">About</a>
+                <a href="#test" class="links">Test</a>
+                <a href="#challenges" class="links">Challenges</a>
+                <a href="#stats" class="links">Stats</a>
+                <a href="#leaderboard" class="links">Leaderboard</a>
+                <a href="#signin" class="links sign">Sign-in</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="objc">
+        <div class="para">
+            <h1 class="para-h">Unlock Your True Typing Speed</h1>
+            <p class="para-desc">
+                Typing speed is measured in Words Per Minute (WPM), calculated standardly as five keystrokes per word. Beyond raw speed, true typing efficiency comes down to muscle memory, rhythm, and accuracy.
+                The average typist sits between 35 and 45 WPM, while professional developers, writers, and competitive typists consistently push past 75 to 100+ WPM. Tracking your WPM and error rate helps eliminate keystroke latency, turning your thoughts directly into code and text without friction.
+            </p>
+        </div>
+
+        <div class="para">
+            <div class="stats-card">
+                <div class="card-header">
+                    <h3>WPM over Time</h3>
+                    <span class="badge">Peak: 114 WPM</span>
+                </div>
+                <svg viewBox="0 0 500 220" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feMerge>
+                                <feMergeNode in="blur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                        <linearGradient id="chart-fade" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#00f5a0" stop-opacity="0.35"/>
+                            <stop offset="100%" stop-color="#00f5a0" stop-opacity="0.0"/>
+                        </linearGradient>
+                    </defs>
+
+                    <line x1="40" y1="30" x2="480" y2="30" stroke="#1f2937" stroke-dasharray="4" />
+                    <line x1="40" y1="80" x2="480" y2="80" stroke="#1f2937" stroke-dasharray="4" />
+                    <line x1="40" y1="130" x2="480" y2="130" stroke="#1f2937" stroke-dasharray="4" />
+                    <line x1="40" y1="180" x2="480" y2="180" stroke="#1f2937" />
+
+                    <text x="10" y="35" fill="#6b7280" font-size="10" font-family="monospace">120</text>
+                    <text x="15" y="85" fill="#6b7280" font-size="10" font-family="monospace">80</text>
+                    <text x="15" y="135" fill="#6b7280" font-size="10" font-family="monospace">40</text>
+                    <text x="20" y="185" fill="#6b7280" font-size="10" font-family="monospace">0</text>
+
+                    <path d="M 40 180 Q 70 120, 110 110 T 180 75 T 250 100 T 320 60 T 400 45 T 480 55 L 480 180 L 40 180 Z" fill="url(#chart-fade)" />
+                    <path d="M 40 180 Q 70 120, 110 110 T 180 75 T 250 100 T 320 60 T 400 45 T 480 55" fill="none" stroke="#00f5a0" stroke-width="3" filter="url(#neon-glow)" />
+
+                    <circle cx="400" cy="45" r="4.5" fill="#00f5a0" stroke="#0e1726" stroke-width="2" />
+                    <rect x="375" y="18" width="50" height="20" rx="4" fill="#111827" stroke="#00f5a0" stroke-width="0.8"/>
+                    <text x="382" y="32" fill="#00f5a0" font-size="10" font-weight="bold" font-family="monospace">114 WPM</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <main class="main_">
+        <h1 class="gamemode">Game Modes</h1>
+        <div class="modes">
+            <div class="para1">
+                <img src="images/Gemini_Generated_Image_ajc37dajc37dajc3.png" alt="Multiplayer Challenge" class="image">
+                <h2 class="setmode">Multiplayer Challenge</h2>
+                <p class="modepara">Challenge your Friend</p>
+                <button class="action-btn">Create lobby / join room</button>
+            </div>
+
+            <div class="para1">
+                <img src="images/Gemini_Generated_Image_a6rt33a6rt33a6rt.png" alt="Timed Challenge" class="image">
+                <h2 class="setmode">Timed Challenge</h2>
+                <p class="modepara">Set the clock</p>
+                <button class="action-btn">Start timed test</button>
+            </div>
+
+            <div class="para1">
+                <img src="images/Gemini_Generated_Image_13op7k13op7k13op.png" alt="Unlimited Time" class="image">
+                <h2 class="setmode">Unlimited Time</h2>
+                <p class="modepara">No pressure, just flow</p>
+                <button class="action-btn">Start practice</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
