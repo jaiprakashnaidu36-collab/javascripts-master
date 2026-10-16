@@ -19,3 +19,14 @@ new Promise((resolve,reject)=>{
 }).then(()=>{
     console.log("Count value is : ")
 })
+
+
+const promise3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve({username:"Jai prakash" , Age:19})
+    },1000)
+})
+
+promise3.then((user)=>{
+    console.log(user);
+})
