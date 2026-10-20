@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0a0e14;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -16,6 +21,8 @@ body {
     width: 100%;
     align-items: center;
     padding: 0.75rem 1.5rem;
+    position:sticky;
+    top: 0;
     border-radius: 16px;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.05);
@@ -175,4 +182,8 @@ body {
 .action-btn:hover {
     opacity: 0.9;
     transform: scale(1.02);
+}
+
+.action-btn a{
+    text-decoration: none;
 }

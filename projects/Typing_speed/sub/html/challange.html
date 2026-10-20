@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapidStrokes</title>
+    <link rel="icon" href="images/images.png" type="image/x-icon">
+    <script src="../javascript/challange.js" defer></script>
+    <link rel="stylesheet" href="../css/challange.css">
+</head>
+<body>
+        <header class="navhead">
+        <div class="navhead1">
+            <img src="/projects/Typing_speed/images/Gemini_Generated_Image_lkdno3lkdno3lkdn.png" alt="RapidStrokes Logo" height="50">
+        </div>
+        <div class="navhead1">
+            <nav class="nav">
+                <a href="#about" class="links">About</a>
+                <a href="#test" class="links">Test</a>
+                <a href="#challenges" class="links">Challenges</a>
+                <a href="#stats" class="links">Stats</a>
+                <a href="#leaderboard" class="links">Leaderboard</a>
+                <a href="#signin" class="links sign">Sign-in</a>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="head">Multiplayer Challange</h1>
+
+    <main class="main_">
+        <div class="section1">
+            <h1 class="head_main">Create a Private lobby</h1>
+            <button class="but_sec1">Create Lobby</button>
+           <form id="inp_details" class="inp_details">
+    <!-- Word Count Options -->
+            <div class="setting-group">
+                <span class="setting-label">Select Word Count</span>
+                <div class="button-row">
+                    <button type="button" class="chip-btn active">25</button>
+                    <button type="button" class="chip-btn">50</button>
+                    <button type="button" class="chip-btn">100</button>
+                </div>
+            </div>
+
+            <!-- Duration Options -->
+            <div class="setting-group">
+                <span class="setting-label">Duration</span>
+                <div class="button-row">
+                    <button type="button" class="chip-btn active">30s</button>
+                    <button type="button" class="chip-btn">60s</button>
+                </div>
+            </div>
+
+            <!-- Public / Private Switch -->
+            <div class="setting-group">
+                <span class="setting-label">Privacy</span>
+                <div class="button-row">
+                    <button type="button" class="chip-btn active">Public</button>
+                    <button type="button" class="chip-btn">Private</button>
+                </div>
+            </div>
+        </form>
+        <div class="code"><h2>Lobby Code : <span class="code_"></span></h2></div>
+        </div>
+        <div class="section1">
+            <h1 class="head_main">Join a lobby</h1>
+            <form id="inp">
+            <input type="text" class="inptext" placeholder="Enter lobby code" >
+            </form>
+            <button class="but_sec2" form="inp" type="submit">Join Room</button>
+        </div>
+
+
+    </main>
+</body>
+</html>
