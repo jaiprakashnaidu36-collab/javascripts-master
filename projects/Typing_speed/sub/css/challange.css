@@ -30,6 +30,16 @@ body {
     align-items: center;
     gap: 0.75rem;
     flex-wrap: wrap;
+    
+}
+
+.links{
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.links:hover{
+    transform: translateY(-4px);
 }
 
 .links {
@@ -245,4 +255,12 @@ body {
 
 .inptext{
     color:white;
+}
+
+.col{
+    color:#00d2ff;
+}
+
+.but_sec2{
+    background-color: #00d2ff;
 }
