@@ -253,6 +253,10 @@ body {
     border-radius:10px;
 }
 
+.code_{
+    color:white;
+}
+
 .inptext{
     color:white;
 }
