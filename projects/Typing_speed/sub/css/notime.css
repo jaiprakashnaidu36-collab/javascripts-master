@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0e14;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #e5e7eb;
+    padding: 1.5rem;
+}
+
+.navhead {
+    display: flex;
+    position: sticky;
+    top:0;
+    width: 100%;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 16px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    
+}
+
+.links{
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.links:hover{
+    transform: translateY(-4px);
+}
+
+.links {
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.06);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.links:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.links.sign {
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.links.sign:hover {
+    background-color: #2563eb;
+}
+
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+}
+
+body {
+    background-color: #0d0f12;
+    color: #e2e8f0;
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    overflow-x: hidden;
+}
+
+.zen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.logo-icon {
+    height: 34px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+}
+
+.logo-text span {
+    color: #00e676;
+}
+
+.mode-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+.mode-item {
+    color: #00e676;
+    font-weight: 600;
+}
+
+.divider {
+    color: #4b5563;
+}
+
+.word-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.word-btn:hover, .word-btn.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#reset-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+    padding: 0.4rem 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#reset-btn:hover {
+    color: #ffffff;
+    border-color: #00e676;
+}
+
+.typing-container {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.zen-stats {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.95rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #64748b;
+    letter-spacing: 0.5px;
+}
+
+.words-wrapper {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.85rem;
+    line-height: 2.8rem;
+    color: #4b5563;
+    outline: none;
+    user-select: none;
+    cursor: text;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.8rem;
+    height: 140px;
+    overflow: hidden;
+}
+
+.letter {
+    position: relative;
+    transition: color 0.1s ease;
+}
+
+.letter.correct {
+    color: #00e676;
+}
+
+.letter.incorrect {
+    color: #ef4444;
+    text-decoration: underline;
+}
+
+.letter.current-letter::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 15%;
+    height: 70%;
+    width: 2.5px;
+    background: #00e676;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.hidden-input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.shortcut-hint {
+    text-align: center;
+    color: #475569;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+kbd {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    color: #94a3b8;
+}
