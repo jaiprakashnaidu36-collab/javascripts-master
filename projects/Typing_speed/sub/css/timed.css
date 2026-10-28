@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0e14;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #e5e7eb;
+    padding: 1.5rem;
+}
+
+.navhead {
+    display: flex;
+    position: sticky;
+    top:0;
+    width: 100%;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 16px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    
+}
+
+.links{
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.links:hover{
+    transform: translateY(-4px);
+}
+
+.links {
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.06);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.links:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.links.sign {
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.links.sign:hover {
+    background-color: #2563eb;
+}
+
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+}

@@ -6,4 +6,3 @@ generate.addEventListener('click',(e)=>{
     code.textContent = Math.floor((Math.random()*10))*321+20
     console.log(code);
 })
-
