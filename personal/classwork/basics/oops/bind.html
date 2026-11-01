@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bind</title>
+</head>
+<body>
+    <button id="select">Click Me</button>
+</body>
+<script>
+    class perform{
+    constructor(){
+        this.name = "React"
+        this.server = "Https://300"
+        
+        document
+        .querySelector("#select")
+        .addEventListener("click" , this.callevent.bind(this))
+
+    }
+
+    callevent(){
+        console.log("Button clicked");
+        console.log(this)
+        console.log(this.server)
+    }
+}
+    new perform();
+</script>
+</html>
