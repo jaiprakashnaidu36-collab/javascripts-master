@@ -114,3 +114,32 @@ const {studentcourse : course} = q
 
 console.log(course);
 
+const obj12 = {
+    name : "Jaiprakash" , 
+    password : 51151 ,
+    fun : function(){
+        console.log(this.name);
+    }
+}
+
+
+console.log(Object.getOwnPropertyDescriptor(obj12,"name"));
+
+Object.defineProperty(obj12 , "name" , {
+    enumerable : false ,
+    writable :false
+})
+
+console.log(obj12.fun());
+
+
+console.log(Object.getOwnPropertyDescriptor(obj12,"name" ,"password"))
+
+// If we run a loop on the object we would not get name in the output console because the enumerable value is false 
+ 
+
+for (let [key,value] of Object.entries(obj12)) {
+    if(typeof value !== 'function'){
+        console.log(`${key} : ${value}`);
+    }   
+}
