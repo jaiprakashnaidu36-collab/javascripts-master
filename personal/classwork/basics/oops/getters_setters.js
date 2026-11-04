@@ -36,7 +36,7 @@ const obj1 = {
     password_ : "123456" ,
     get email(){
         return this.email_
-    },
+    }, 
     set email(value){
         this.email_ = value 
     }
