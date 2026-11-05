@@ -181,6 +181,12 @@ body {
     letter-spacing: 0.5px;
 }
 
+.shortcut-hint{
+    margin : 1rem;
+    position: sticky;
+    bottom: 0;
+}
+
 .words-wrapper {
     font-family: 'JetBrains Mono', monospace;
     font-size: 1.85rem;
