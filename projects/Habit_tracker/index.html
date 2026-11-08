@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header class="habit_header" id="habit_header">
+        <h1 id="habit_header_h1">Daily Habit Tracker</h1>
+        <div class="progress" id="progress">
+
+        </div>
+    </header>
+    <main class="habit_main" id="habit_main">
+        <form>
+            <label for="table">Create New Habit</label>
+            <input id="table" placeholder="e.g., Read 10 Pages">
+            <label for="category">Category</label>
+            <select id="category">
+                <option>Choose</option>
+                <option value="Coding">Coding</option>
+                <option value="Study">Study</option>
+                <option value="fitness">Fitness</option>
+                <option value="Others">Others</option>
+            </select>
+            <input type="submit" value="+ Add Habit"> 
+        </form>
+
+        <div class="sort" id="sort">
+            <button value="Coding">Coding</button>
+            <button value="Study">Study</button>
+            <button value="fitness">Fitness</button>
+            <button value="Others">Others</button>
+            <label for="sort_by">Sort</label>
+            <select id="sort_by">
+                <option value="Coding">Coding</option>
+                <option value="Study">Study</option>
+                <option value="Fitness">Fitness</option>
+            </select>
+        </div>
+        <div class="habits" id="habits">
+            <div class="hab" id="hab">
+                <h2 id="hab_title"></h2>
+                <span id="hab_title_index"></span>
+                <span id="days"></span>
+                <span id="days_count" class="days_count" value="sunday"></span>
+                <span id="days_count" class="days_count" value="monday"></span>
+                <span id="days_count" class="days_count" value="tuesday"></span>
+                <span id="days_count" class="days_count" value="wednesday"></span>
+                <span id="days_count" class="days_count" value="thursday"></span>
+                <span id="days_count" class="days_count" value="friday"></span>
+                <span id="days_count" class="days_count" value="saturday"></span>
+                <button id="delete">&#xe872;</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
