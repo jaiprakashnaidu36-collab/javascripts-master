@@ -1,0 +1,345 @@
+:root {
+    --bg-dark: #0F172A;
+    --card-surface: #1E293B;
+    --card-surface-hover: #24344D;
+    --border-color: #334155;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --accent-emerald: #10B981;
+    --accent-emerald-hover: #059669;
+    --accent-blue: #3B82F6;
+    --accent-red: #EF4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+}
+
+.habit-header {
+    max-width: 1000px;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card-surface);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.habit-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.habit-header h1 span {
+    color: var(--accent-emerald);
+}
+
+.progress-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 220px;
+}
+
+.progress-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.progress-count {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 8px;
+    background-color: #334155;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #10B981, #3B82F6);
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
+
+.habit-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-card {
+    background: var(--card-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+}
+
+form {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+form input,
+form select,
+.sort-wrapper select {
+    background-color: #0F172A;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+form input:focus,
+form select:focus,
+.sort-wrapper select:focus {
+    border-color: var(--accent-emerald);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.btn-primary {
+    background-color: var(--accent-emerald);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.4rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-emerald-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.filter-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-pills {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.pill {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.45rem 1.1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.pill:hover {
+    color: var(--text-primary);
+    background-color: var(--card-surface);
+}
+
+.pill.active {
+    background-color: var(--card-surface);
+    color: var(--text-primary);
+    border-color: var(--accent-emerald);
+    font-weight: 600;
+}
+
+.sort-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.habits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.habit-card {
+    background: var(--card-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.habit-card:hover {
+    border-color: #475569;
+    transform: translateY(-2px);
+}
+
+.habit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 180px;
+}
+
+.habit-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.category-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.tag-fitness { background-color: rgba(16, 185, 129, 0.15); color: #34D399; }
+.tag-coding  { background-color: rgba(59, 130, 246, 0.15); color: #60A5FA; }
+.tag-study   { background-color: rgba(245, 158, 11, 0.15); color: #FBBF24; }
+.tag-personal{ background-color: rgba(168, 85, 247, 0.15); color: #C084FC; }
+.tag-others  { background-color: rgba(148, 163, 184, 0.15); color: #CBD5E1; }
+
+.streak-badge {
+    font-size: 0.85rem;
+    color: #F59E0B;
+    font-weight: 600;
+}
+
+.week-tracker {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.day-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.day-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.day-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.day-circle:hover {
+    border-color: var(--accent-emerald);
+    transform: scale(1.1);
+}
+
+.day-circle.completed {
+    background-color: var(--accent-emerald);
+    border-color: var(--accent-emerald);
+    color: white;
+}
+
+.day-circle .material-symbols-outlined {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-delete {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+    color: var(--accent-red);
+    background-color: rgba(239, 68, 68, 0.1);
+    transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .habit-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .week-tracker {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .btn-delete {
+        align-self: flex-end;
+    }
+}

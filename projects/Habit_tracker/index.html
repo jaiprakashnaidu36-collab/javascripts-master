@@ -3,59 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habit Tracker</title>
+    <title>Daily Habit Tracker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./index.css">
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <header class="habit_header" id="habit_header">
-        <h1 id="habit_header_h1">Daily Habit Tracker</h1>
-        <div class="progress" id="progress">
-
-        </div>
-    </header>
-    <main class="habit_main" id="habit_main">
-        <form>
-            <label for="table">Create New Habit</label>
-            <input id="table" placeholder="e.g., Read 10 Pages">
-            <label for="category">Category</label>
-            <select id="category">
-                <option>Choose</option>
-                <option value="Coding">Coding</option>
-                <option value="Study">Study</option>
-                <option value="fitness">Fitness</option>
-                <option value="Others">Others</option>
-            </select>
-            <input type="submit" value="+ Add Habit"> 
-        </form>
-
-        <div class="sort" id="sort">
-            <button value="Coding">Coding</button>
-            <button value="Study">Study</button>
-            <button value="fitness">Fitness</button>
-            <button value="Others">Others</button>
-            <label for="sort_by">Sort</label>
-            <select id="sort_by">
-                <option value="Coding">Coding</option>
-                <option value="Study">Study</option>
-                <option value="Fitness">Fitness</option>
-            </select>
-        </div>
-        <div class="habits" id="habits">
-            <div class="hab" id="hab">
-                <h2 id="hab_title"></h2>
-                <span id="hab_title_index"></span>
-                <span id="days"></span>
-                <span id="days_count" class="days_count" value="sunday"></span>
-                <span id="days_count" class="days_count" value="monday"></span>
-                <span id="days_count" class="days_count" value="tuesday"></span>
-                <span id="days_count" class="days_count" value="wednesday"></span>
-                <span id="days_count" class="days_count" value="thursday"></span>
-                <span id="days_count" class="days_count" value="friday"></span>
-                <span id="days_count" class="days_count" value="saturday"></span>
-                <button id="delete">&#xe872;</button>
+    <header class="habit-header">
+        <h1>Daily Habit <span>Tracker</span></h1>
+        <div class="progress-box">
+            <span class="progress-label">Today's Progress</span>
+            <span class="progress-count" id="progress-text">0% Done (0 of 0)</span>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-bar" style="width: 0%;"></div>
             </div>
         </div>
+    </header>
+
+    <main class="habit-main">
+        <section class="form-card">
+            <form id="submit-form">
+                <div class="input-group">
+                    <label for="habit-input">Create New Habit</label>
+                    <input type="text" id="habit-input" placeholder="e.g., Read 10 Pages" required autocomplete="off">
+                </div>
+
+                <div class="input-group">
+                    <label for="habit-category">Category</label>
+                    <select id="habit-category">
+                        <option value="Personal">Personal</option>
+                        <option value="Coding">Coding</option>
+                        <option value="Study">Study</option>
+                        <option value="Fitness">Fitness</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary" id="add-btn">
+                    <span class="material-symbols-outlined">add</span> Add Habit
+                </button>
+            </form>
+        </section>
+
+        <section class="filter-toolbar">
+            <div class="filter-pills" id="filter-pills">
+                <button class="pill active" data-filter="All">All</button>
+                <button class="pill" data-filter="Personal">Personal</button>
+                <button class="pill" data-filter="Coding">Coding</button>
+                <button class="pill" data-filter="Study">Study</button>
+                <button class="pill" data-filter="Fitness">Fitness</button>
+            </div>
+            
+            <div class="sort-wrapper">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                    <option value="created">Recently Added</option>
+                    <option value="streak">Highest Streak</option>
+                    <option value="name">Alphabetical</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="habits-list" id="habits-container">
+            <div class="habit-card">
+                <div class="habit-info">
+                    <h2 class="habit-title">Morning Workout</h2>
+                    <span class="category-tag tag-fitness">Fitness</span>
+                    <span class="streak-badge">🔥 4 Days</span>
+                </div>
+
+                <div class="week-tracker">
+                    <div class="day-node">
+                        <span class="day-label">Mon</span>
+                        <button class="day-circle completed" title="Toggle Nov 02">
+                            <span class="material-symbols-outlined">check</span>
+                        </button>
+                    </div>
+                    <div class="day-node">
+                        <span class="day-label">Tue</span>
+                        <button class="day-circle completed" title="Toggle Nov 03">
+                            <span class="material-symbols-outlined">check</span>
+                        </button>
+                    </div>
+                    <div class="day-node">
+                        <span class="day-label">Wed</span>
+                        <button class="day-circle completed" title="Toggle Nov 04">
+                            <span class="material-symbols-outlined">check</span>
+                        </button>
+                    </div>
+                    <div class="day-node">
+                        <span class="day-label">Thu</span>
+                        <button class="day-circle completed" title="Toggle Nov 05">
+                            <span class="material-symbols-outlined">check</span>
+                        </button>
+                    </div>
+                    <div class="day-node">
+                        <span class="day-label">Fri</span>
+                        <button class="day-circle" title="Toggle Nov 06"></button>
+                    </div>
+                    <div class="day-node">
+                        <span class="day-label">Sat</span>
+                        <button class="day-circle" title="Toggle Nov 07"></button>
+                    </div>
+                    <div class="day-node">
+                        <span class="day-label">Sun</span>
+                        <button class="day-circle" title="Toggle Nov 08"></button>
+                    </div>
+                </div>
+
+                <button class="btn-delete" title="Delete habit">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
+            </div>
+        </section>
     </main>
 </body>
 </html>
