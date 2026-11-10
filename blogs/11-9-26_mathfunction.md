@@ -4,6 +4,7 @@ The JavaScript `Math` built-in object provides mathematical constants and functi
 
 ---
 
+
 ## 1. Absolute Value & Exponentiation
 
 ### `Math.abs(x)`
