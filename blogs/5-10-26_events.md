@@ -4,6 +4,7 @@ Events are signals sent by the browser informing your code that something occurr
 
 ---
 
+
 ## Table of Contents
 
 1. [How Events Work: The Event Lifecycle](#1-how-events-work-the-event-lifecycle)
