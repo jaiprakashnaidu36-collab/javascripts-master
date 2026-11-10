@@ -6,6 +6,7 @@ Functions are fundamental building blocks in JavaScript, used to encapsulate reu
 
 A standard function declaration consists of the `function` keyword, an identifier name, parameter definitions enclosed in parentheses, and a block statement.
 
+
 ```javascript
 function name_() {
   console.log("hello\t".repeat(10));
