@@ -6,6 +6,7 @@ In JavaScript, the value of `this` is typically determined by how a function is 
 
 ## 1. The Core Problem: Dynamic `this`
 
+
 Consider a basic object with a method:
 
 ```javascript
