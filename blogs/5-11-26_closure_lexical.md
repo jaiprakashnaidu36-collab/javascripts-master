@@ -6,6 +6,7 @@ Understanding lexical scope and closures is essential for mastering JavaScript. 
 
 ## 1. Lexical Scope (Static Scope)
 
+
 ### What Does "Lexical" Mean?
 In computer science, "lexical" refers to the **lexing/tokenizing phase** of code compilation or interpretation. 
 
