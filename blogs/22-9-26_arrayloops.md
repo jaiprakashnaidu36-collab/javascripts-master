@@ -6,6 +6,7 @@ This comprehensive guide covers every loop mechanism in JavaScript—from tradit
 
 ---
 
+
 ## Table of Contents
 1. [Traditional Loops](#1-traditional-loops)
    - Standard `for` Loop
