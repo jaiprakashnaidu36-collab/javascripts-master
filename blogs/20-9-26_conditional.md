@@ -6,6 +6,7 @@ In this guide, we will cover everything you need to know about decision-making i
 
 ---
 
+
 ## 1. Truthy vs. Falsy Values
 
 Before working with conditions, it is essential to understand how JavaScript evaluates expressions to booleans.
