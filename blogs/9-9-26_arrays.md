@@ -4,6 +4,7 @@ In JavaScript, an array is an ordered collection of values. Unlike many strictly
 
 ---
 
+
 ## 1. Declaring and Accessing Arrays
 
 Arrays are zero-indexed, meaning the first element sits at index `0`.
