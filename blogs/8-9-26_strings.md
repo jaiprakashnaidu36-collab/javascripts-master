@@ -4,6 +4,7 @@ Strings are fundamental building blocks in JavaScript, used to store, represent,
 
 ---
 
+
 ## 1. Declaring Strings
 
 JavaScript provides three distinct ways to define string literals:
