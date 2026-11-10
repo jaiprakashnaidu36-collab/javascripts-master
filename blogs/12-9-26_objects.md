@@ -6,6 +6,7 @@ In JavaScript, objects are non-primitive data types used to store collections of
 
 ## 1. Object Syntax & Symbol Keys
 
+
 Keys in a JavaScript object are treated as strings or Symbols by default. When using a `Symbol` as a key, wrap the variable in square brackets `[key]` so JavaScript evaluates it as a variable rather than a string literal.
 
 ```javascript
