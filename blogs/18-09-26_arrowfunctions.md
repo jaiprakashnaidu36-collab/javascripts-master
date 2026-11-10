@@ -6,6 +6,7 @@ Two of the most common concepts developers encounter—and often get confused by
 
 ## 1. What is the `this` Keyword?
 
+
 In JavaScript, `this` refers to the **current execution context**—the object executing or invoking the function. Its value is generally determined by **how and where a function is called at runtime**, rather than where it was declared.
 
 ### `this` Inside an Object Method
