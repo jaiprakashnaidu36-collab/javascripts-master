@@ -40,4 +40,19 @@ async function loadUserData(userId) {
   }
 }
 
-loadUserData(101);
+// loadUserData(101);
+
+
+const arr = [
+  {
+    jai : "jai",
+    rollno : 12
+  },
+  {
+    jai : "name",
+    rollno : 10
+  }
+]
+
+
+console.log(arr)

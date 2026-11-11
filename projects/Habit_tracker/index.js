@@ -6,6 +6,7 @@ const habit_counter = document.querySelector("#habits-container");
 const data_value = document.querySelector("#habit-input");
 const select_data = document.querySelector("#habit-category");
 const adddiv = document.querySelector(".habits-list");
+const days_count = document.querySelector(".streak-badge")
 
 function progress_display(){
 
@@ -24,12 +25,11 @@ data.addEventListener("submit", (e) => {
 
     const card = document.createElement("div");
     card.classList.add("habit-card");
-
     card.innerHTML = `
         <div class="habit-info">
             <h2 class="habit-title">${habitText}</h2>
             <span class="category-tag tag-${habitCategory.toLowerCase()}">${habitCategory}</span>
-            <span class="streak-badge">🔥 0 Days</span>
+            <span class="streak-badge">🔥${0} Days</span>
         </div>
 
         <div class="week-tracker">
@@ -73,14 +73,14 @@ data.addEventListener("submit", (e) => {
     habits.push({
         name: habitText,
         category: habitCategory,
-        streak: 0
+        streak: days_count
     });
 
     data.reset();
 });
 
 
-// console.log(habits)
+console.log(habits)
 
 
 const habitsContainer = document.querySelector("#habits-container");
@@ -92,11 +92,15 @@ habitsContainer.addEventListener("click", (e) => {
 
         if (dayBtn.classList.contains("completed")) {
             dayBtn.innerHTML = `<span class="material-symbols-outlined">check</span>`;
+            days_count.textContent = `🔥 ${dayBtn.dataset.daycount} days`
+            habits.push()
         } else {
             dayBtn.innerHTML = "";
+            days_count.textContent = `🔥 ${dayBtn.dataset.daycount - 1} days`
         }
 
     }
+
 
     const deleteBtn = e.target.closest(".btn-delete");
     if (deleteBtn) {

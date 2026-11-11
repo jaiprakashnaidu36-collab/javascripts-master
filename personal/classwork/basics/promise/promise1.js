@@ -2,6 +2,7 @@ const promise1 = new Promise(function(resolve,reject){
     setTimeout(()=>{
         console.log("Task completed")
     },1000)
+    
     resolve()
 })
 
